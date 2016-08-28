@@ -1,0 +1,9 @@
+{
+    "config": {
+        "vendor-dir": "library"
+    },
+    "require": {
+        "php": ">=5.4",
+        "panda-bear/framework": "1.*"
+    }
+}
