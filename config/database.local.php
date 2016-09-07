@@ -3,7 +3,7 @@
 return array(
     'database' => array(
         'default' => array(
-            'adapter'    => Panda\Database::MYSQL,
+            'adapter'    => Panda\Database\Adapter::MYSQL,
             'username'  => '',
             'password'  => '',
             'dbname'    => '',
