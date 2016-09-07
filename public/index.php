@@ -1,9 +1,18 @@
 <?php
 
-define('APPROOT', __DIR__ . '/..');
+ini_set('display_errors',           1);
+ini_set('display_startup_errors',   1);
 
-include APPROOT . '/library/autoload.php';
+error_reporting(E_ALL);
 
-Panda\Bootstrap::make(
-    APPROOT . '/application.php'
-);
+define('PANDA_TIMESTAMP', microtime(true));
+
+/**
+ |  Include composer loader
+ */ 
+include __DIR__ . '/../library/autoload.php';
+
+/**
+ |  Execution bootstrap scenario
+ */ 
+include __DIR__ . '/../bootstrap.php';
