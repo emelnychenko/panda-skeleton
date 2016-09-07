@@ -6,22 +6,22 @@
  *  @author  Eugen Melnychenko
  */
 
-namespace Panda\Plugin\Controller;
+namespace Panda\Package\Controller;
 
 /**
  *  Panda Plugin Controller
  *
  *  @subpackage Plugin
  */
-class PluginController extends \Panda\Controller
+class Package extends \Panda\Http\ControllerAbstract
 {
     public function getIndex()
     {
-        return $this->swift('index');
+        return $this->view('index');
     }
 
     public function notFound()
     {
-        return $this->swift('404');
+        return $this->view('404');
     }
 }
